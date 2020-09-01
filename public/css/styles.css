@@ -38,13 +38,17 @@ nav a {
 address {
     padding-left: 10px;
 }
-.main{
+
+.main {
     min-height: 400px;
     margin: 10px;
 }
+
 input {
+    font-size: 1.1em;
     padding: 10px;
 }
+
 button {
     cursor: pointer;
     color: white;

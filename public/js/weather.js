@@ -1,6 +1,6 @@
 const locationForm = document.querySelector('form')
 const address = document.querySelector("#address")
-
+const message = document.querySelector('#message')
 locationForm.addEventListener('submit', (e)=>{
     e.preventDefault()
     if (!address.value){
@@ -8,7 +8,7 @@ locationForm.addEventListener('submit', (e)=>{
         document.querySelector("#infobox").setAttribute("style","display:none;")
         return document.querySelector('#message').textContent = 'Please enter a valid address'
     }
-    document.querySelector('#message').textContent = 'Loading ...'
+    message.textContent = 'Loading ...'
 
     // console.log(address.value)
     fetch('http://localhost:8989/weather?address=' + address.value).then((response)=>{
