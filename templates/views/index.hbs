@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head }}
+<body>
+{{> header }}
+<div class="main">
+    <img src="img/3-robot.jpg" width="10%" alt="robot">
+    <h3>Robotics is cool</h3>
+    <form action="">
+        <div>
+            <input type="text" id="address" name="address" placeholder="location">
+            <button type="submit">Search</button>
+        </div>
+    </form>
+    <p id="message"></p>
+    <div id="infobox" style="display: none;">
+        <p>
+            Location: <span id="location"></span><br>
+            Temperature: <span id="temperature"></span><br>
+            Feels like: <span id="feelslike"></span><br>
+        </p>
+    </div>
+</div>
+
+{{> footer }}
+<script type="application/javascript" src="/js/weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+    margin: 0 0 0 0;
+    padding: 20px 0 20px 0;
+    font-family: Arial, Verdana, SansSerif;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-left: 10px;
+    color: darkgreen;
+}
+
+p {
+    padding-left: 10px;
+}
+
+footer {
+    margin: 40px 0 0 0;
+    padding: 20px 0 40px 10px;
+    background: black;
+    color: white;
+}
+
+nav {
+    padding-left: 10px;
+    font-size: 1.1em;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    color: darkolivegreen;
+    text-decoration: none;
+}
+
+address {
+    padding-left: 10px;
+}
+.main{
+    min-height: 400px;
+    margin: 10px;
+}
+input {
+    padding: 10px;
+}
+button {
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    color: grey;
+}
