@@ -11,7 +11,7 @@ locationForm.addEventListener('submit', (e)=>{
     message.textContent = 'Loading ...'
 
     // console.log(address.value)
-    fetch('http://localhost:8989/weather?address=' + address.value).then((response)=>{
+    fetch('/weather?address=' + address.value).then((response)=>{
     response.json().then((data)=>{
         if(data.message === 'Location not found'){
             // console.log('address not found')

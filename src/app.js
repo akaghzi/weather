@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
+const port = process.env.PORT || 8989
 
 const getlonglat = require("./utils/getlonglat");
 const getweather = require("./utils/getweather");
@@ -95,6 +96,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(8989, () => {
-    console.log('server started on port 8989')
+app.listen(port, () => {
+    console.log('server started on port $port')
 })
